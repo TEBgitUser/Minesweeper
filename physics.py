@@ -31,11 +31,11 @@ class create():
         self.chances = [1, 2, 3, 4]
         self.mesh = [(self.x,self.y) for self.x in range(self.grid) for self.y in range(self.grid)]
         if self.grid == 20:
-            self.bomb_image = PhotoImage(file=r"C:\Users\Uczeń\PycharmProjects\pythonProject\minesweeper_v2\bomb.png").zoom(3, 3)
+            self.bomb_image = PhotoImage(file=r"bomb.png").zoom(3, 3)
         if self.grid == 15:
-            self.bomb_image = PhotoImage(file=r"C:\Users\Uczeń\PycharmProjects\pythonProject\minesweeper_v2\bomb.png").zoom(4, 4)
+            self.bomb_image = PhotoImage(file=r"bomb.png").zoom(4, 4)
         if self.grid == 10:
-            self.bomb_image = PhotoImage(file=r"C:\Users\Uczeń\PycharmProjects\pythonProject\minesweeper_v2\bomb.png").zoom(6, 6)
+            self.bomb_image = PhotoImage(file=r"bomb.png").zoom(6, 6)
 
     def do(self):
         for i in range(self.grid * self.grid):
